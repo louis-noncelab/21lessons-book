@@ -1,10 +1,13 @@
-\chapter{Telling Time Takes Work}
+\chapter{시간을 알려주는 데는 노력이 필요하다.}
 \label{les:17}
 
-\begin{chapquote}{Lewis Carroll, \textit{Alice in Wonderland}}
-\enquote{Dear, dear! I shall be too late!}
+%\begin{chapquote}{Lewis Carroll, \textit{Alice in Wonderland}}
+%\enquote{Dear, dear! I shall be too late!}
+\begin{chapquote}{루이스 캐롤, \textit{이상한 나라의 앨리스}}
+\enquote{저기, 저기! 나는 너무 늦을 것 같아!}
 \end{chapquote}
 
+\begin{comment}
 It is often said that bitcoins are mined because thousands of computers
 work on solving \textit{very complex} mathematical problems. Certain problems
 are to be solved, and if you compute the right answer, you \enquote{produce} a
@@ -13,33 +16,61 @@ convey, it does miss the point somewhat. Bitcoins aren't produced or
 created, and the whole ordeal is not really about solving particular
 math problems. Also, the math isn't particularly complex. What is
 complex is \textit{telling the time} in a decentralized system.
+\end{comment}
+사람들은 수천 대의 컴퓨터가 매우 복잡한 수학 문제를 풀기 위해 작업하기 때문에 비트코인이 채굴된다고 말한다.
+특정 문제의 정답을 찾으면 비트코인은 \enquote{채굴}된다.
+비트코인 채굴이라는 이 단순한 표현은 이해에는 더 쉬울 수 있지만, 이 표현은 핵심을 놓치고 있다.
+비트코인은 생산되거나 생성되지 않으며, 이 과정은 수학 문제를 푸는 것과는 관련이 없다.
+그리고 채굴에 활용되는 수학은 그다지 복잡하지 않다. 
+오히려 더 복잡한 것은 탈중앙화된 시스템에서 시간을 알려주는 것이다.
 
+\begin{comment}
 As outlined in the whitepaper, the proof-of-work system (aka mining) is
 a way to implement a distributed timestamp server.
+\end{comment}
+비트코인 백서에서 설명된 대로 작업증명(proof-of-work, 일명 마이닝)은 탈중앙화된 타임스탬프\footnote{역자: 특정 시각을 기록하는 문자열} 서버를 구현하는 방법이다.
 
 \begin{figure}
   \includegraphics{assets/images/bitcoin-whitepaper-timestamp-wide.png}
-  \caption{Excerpts from the whitepaper. Did someone say timechain?}
+%  \caption{Excerpts from the whitepaper. Did someone say timechain?}
+  \caption{백서에서 발췌. 누가 타임체인이라고 했습니까?}
   \label{fig:bitcoin-whitepaper-timestamp-wide}
 \end{figure}
 
+\begin{comment}
 When I first learned how Bitcoin works I also thought that proof-of-work
 is inefficient and wasteful. After a while, I started to shift my
 perspective on Bitcoin's energy consumption~\cite{gigi:energy}. It seems that
 proof-of-work is still widely misunderstood today, in the year 10 AB
 (after Bitcoin).
+\end{comment}
+내가 비트코인을 처음 접했을 때, 작업증명은 비효율적이고 낭비라고 생각했다.
+하지만, 머지않아 비트코인의 에너지 낭비\cite{gigi:energy}에 대한 관점을 바꾸기 시작했다.
+작업증명은 비트코인이 시작된지 10년이 지난 오늘날에도 여전히 오해받고 있다.
 
+\begin{comment}
 Since the problems to be solved in proof-of-work are made up, many
 people seem to believe that it is \textit{useless} work. If the focus is purely
 on the computation, this is an understandable conclusion. But Bitcoin
 isn't about computation. It is about \textit{independently agreeing on the
 order of things.}
+\end{comment}
+작업증명에서 풀어야 할 문제는 인위적으로 만들어졌기 때문에 쓸데없는 작업이라고 생각하는 사람들이 많은 것 같다.
+단순하게 계산에만 관점을 둔다면 그렇게 판단할 수도 있다.
+하지만 비트코인은 무언가를 계산하기 위해 작업증명을 사용한 것이 아니다.
+작업증명은 독립적인 주체들이 어떤 일의 순서를 정하기 위해 동의에 이르는 과정이다.
 
+\begin{comment}
 Proof-of-work is a system in which everyone can validate what happened
 and in what order it happened. This independent validation is what leads
 to consensus, an individual agreement by multiple parties about who owns
 what.
+\end{comment}
+작업증명은 모든 참여자가 발생한 사건과 사건의 순서를 검증하는 시스템이다.
+누가 무엇을 소유하는지를 여러 당사자의 개별적 판단에 따라 합의되었음을 검증하는 것이다.
 
+
+\begin{comment}
 In a radically decentralized environment, we don't have the luxury of absolute
 time. Any clock would introduce a trusted third party, a central point in the
 system which had to be relied upon and could be attacked. \enquote{Timing is the root
@@ -48,13 +79,24 @@ brilliantly solved this problem by implementing a decentralized clock via a
 proof-of-work blockchain. Everyone agrees beforehand that the chain with the
 most cumulative work is the source of truth. It is per definition what actually
 happened. This agreement is what is now known as Nakamoto consensus.
+\end{comment}
+근원적으로 탈중앙화된 환경에서 절대적 시간은 존재할 수 없다.
+기존에 존재하는 모든 시계는 언제든 해킹될 수 있는 제삼자를 통해서 운영된다.
+그리샤 트루베츠코이(Grisha Trubetskoy)는  \enquote{시간은 근본적인 문제}라고 지적하였다\cite{pow-clock}.
+사토시는 작업증명 블록체인을 통해 탈중앙형 시계를 구현하여 이 문제를 훌륭하게 해결했다.
+모든 참여자는 가장 많은 작업이 있는 작업증명 체인이 진실이라고 사전에 동의한다.
+그리고 비트코인은 이러한 정의에 따라 실제로 구동되고 있다.
+이 동의를 나카모토 합의라 한다.
 
 \begin{quotation}\begin{samepage}
-\enquote{The network timestamps transactions by hashing them into an ongoing
-chain which serves as proof of the sequence of events witnessed}
-\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, the Bitcoin whitepaper~\cite{whitepaper}}
+%\enquote{The network timestamps transactions by hashing them into an ongoing
+%chain which serves as proof of the sequence of events witnessed}
+%\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, the Bitcoin whitepaper~\cite{whitepaper}}
+\enquote{네트워크는 제출된 거래의 순서를 증명하는 체인에 해시화한 트랜잭션의 시간과 내용을 기록(timestamp)한다. }
+\begin{flushright} -- Satoshi Nakamoto\footnote{사토시 나카모토, 비트코인 백서~\cite{whitepaper}}
 \end{flushright}\end{samepage}\end{quotation}
 
+\begin{comment}
 Without a consistent way to tell the time, there is no consistent way to
 tell before from after. Reliable ordering is impossible. As mentioned
 above, Nakamoto consensus is Bitcoin's way to consistently tell the
@@ -63,20 +105,41 @@ decentralized clock, by utilizing both greed and self-interest of
 competing participants. The fact that this clock is imprecise is
 irrelevant because the order of events is eventually unambiguous and can
 be verified by anyone.
+\end{comment}
+시간을 결정하지 않으면 사건의 이전과 이후를 구분할 방법이 없다.
+신뢰할 수 있는 순서를 만드는 것은 불가능하다.
+위에서 언급한 나카모토 합의는 비트코인이 지속적으로 시간을 알려주는 방법이다.
+시스템의 인센티브 구조는 경쟁 참여자의 욕심과 이기심을 활용하여 확률적으로 탈중앙화된 시계를 만든다.
+이 시계의 시각은 부정확하다. 
+하지만 비트코인에서 이벤트의 선후관계를 결정하는 데에 시각의 정확성은 관련이 없다.
 
+\begin{comment}
 Thanks to proof-of-work, both the work \textit{and} the validation of the work
 are radically decentralized. Everyone can join and leave at will, and
 everyone can validate everything at all times. Not only that, but
 everyone can validate the state of the system \textit{individually}, without
 having to rely on anyone else for validation.
+\end{comment}
+작업증명 덕분에 작업과 검증의 탈중앙화가 가능하다.
+누구나 마음대로 가입하고 탈퇴할 수 있으며 누구나 언제든 모든 것을 검증할 수 있다.
+그뿐만 아니라 다른 사람을 의존할 필요 없이 시스템 상태를 스스로 검증할 수 있다.
 
+
+\begin{comment}
 Understanding proof-of-work takes time. It is often counter-intuitive,
 and while the rules are simple, they lead to quite complex phenomena.
 For me, shifting my perspective on mining helped. Useful, not useless.
 Validation, not computation. Time, not blocks.
+\end{comment}
+작업증명을 이해하는 것은 시간이 걸린다.
+작업증명의 어떤 부분은 직관에 어긋나고, 규칙은 단순하지만 복잡하게 느껴질 수 있다.
+작업증명을 이해하고 나니 채굴에 대한 관점을 바꿀 수 있었다.
+작업증명은 쓸모없는 것이 아니고 쓸모가 있다.
+계산을 하는 것이 아니라 검증하는 것이다.
+작업증명은 블록이 아니라 시간이다.
 
-\paragraph{Bitcoin taught me that telling the time is tricky, especially if you are
-decentralized.}
+%\paragraph{Bitcoin taught me that telling the time is tricky, especially if you are decentralized.}
+\paragraph{비트코인은 누군가의 도움이 없이 시간을 알려주는 것이 얼마나 어려운지 가르쳐주었다.}
 
 % ---
 %

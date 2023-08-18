@@ -1,21 +1,30 @@
-\chapter{Money}
+\chapter{돈}
 \label{les:11}
 
-\begin{chapquote}{The Sage}
-\enquote{In my youth, \ldots \\
-I kept all my limbs very supple, \\
-By the use of this ointment, \\
-five shillings the box -- \\
-Allow me to sell you a couple.}
+\begin{chapquote}{윌리엄 신부}
+\enquote{나는 젊었을 때부터, \ldots \\
+한 통에 5실링 하는 연고를 발라서, \\
+팔다리가 모두 아주 유연했단다. \\
+너도 한두 개 사서 발라보지 않을래 ?
+}\footnote{역자: 이상한 나라의 앨리스 원작에서는 1실링이라고 나온다.}
 \end{chapquote}
 
+
+\begin{comment}
 What is money? We use it every day, yet this question is surprisingly
 difficult to answer. We are dependent on it in ways big and small, and
 if we have too little of it our lives become very difficult. Yet, we
 seldom think about the thing which supposedly makes the world go round.
 Bitcoin forced me to answer this question over and over again: What the
 hell is money?
+\end{comment}
+돈이란 무엇일까? 
+우리는 매일 돈을 사용하지만, 이 질문은 대답하기 어렵다. 
+우리는 돈에 의존하여 살고 있고 돈이 부족하면 생활이 어려워진다. 
+그러나 우리는 돈에 대한 세상을 어떻게 돌아가고 있는지 거의 관심을 두지 않는다.
+비트코인은 돈이 무엇인지에 대한 대답을 강요한다.
 
+\begin{comment}
 In our \enquote{modern} world, most people will probably think of pieces of
 paper when they talk about money, even though most of our money is just
 a number in a bank account. We are already using zeros and ones as our
@@ -24,17 +33,39 @@ core it is a very different \textit{type} of money than the money we currently
 use. To understand this, we will have to take a closer look at what
 money is, how it came to be, and why gold and silver was used for most
 of commercial history.
+\end{comment}
+현대 사회를 사는 대부분 사람은 은행 계좌에 있는 숫자를 보고 종잇조각을 떠올린다.
+우리는 이미 0과 1로 적혀진(bit) 돈을 사용하고 있다. 
+그래서 비트코인(bitcoin)은 이 돈과 어떻게 다른 걸까?
+비트코인은 우리가 현재 사용하는 돈과 본질적으로 매우 다른 유형의 돈이다. 
+다름을 이해하려면 돈이 무엇인지, 돈은 어떻게 생겨났는지, 
+금과 은은 역사적으로 왜 가장 빈번하게 사용되었는지를
+자세히 살펴보아야 한다.
 
 \paragraph{}
+\begin{comment}
 Seashells, gold, silver, paper, bitcoin. In the end, \textbf{money is whatever
 people use as money}, no matter its shape and form, or lack thereof.
+\end{comment}
+조개껍데기, 금, 은, 종이, 비트코인. 결국 \textbf{사람들이 사용한다면 무엇이든 돈이 될 수 있다.}
+돈의 모양, 형태, 희소성과는 관계가 없다.
 
-Money, as an invention, is ingenious. A world without money is insanely
+\begin{comment}
+Money, as an invention, is ingenious. 
+A world without money is insanely
 complicated: How many fish will buy me new shoes? How many cows will buy
 me a house? What if I don't need anything right now but I need to get
 rid of my soon-to-be rotten apples? You don't need a lot of imagination
 to realize that a barter economy is maddeningly inefficient.
+\end{comment}
+인간의 발명품인 돈은 참 독특하다. 
+돈이 없는 세상은 엄청나게 복잡하다. 
+새 신발을 사려면 얼마나 많은 물고기가 필요할까? 
+집을 사는데 몇 마리의 소가 필요할까? 
+썩고 있는 사과를 가지고 있지만 아무것도 살 필요가 없다면? 
+물물교환은 미치도록 비효율적이라는 사실을 깨닫는 것은 그리 어렵지 않다.
 
+\begin{comment}
 The great thing about money is that it can be exchanged for \textit{anything
 else} --- that's quite the invention! As Nick
 Szabo\footnote{\url{http://unenumerated.blogspot.com/}} brilliantly summarizes
@@ -42,15 +73,22 @@ in \textit{Shelling Out: The Origins of Money} \cite{shelling-out}, we humans
 have used all kinds of things as money: beads made of rare materials like ivory,
 shells, or special bones, various kinds of jewelry, and later on rare metals
 like silver and gold.
+\end{comment}
+돈이 위대한 이유는 그 무엇과도 교환할 수 있기 때문이다. 
+참 대단한 발명품이다. 
+닉 재보\footnote{\url{http://unenumerated.blogspot.com/}}는 
+지불: 화폐의 기원(Shelling out\footnote{역자: Shell out은 '지불하다.'라는 뜻으로 쓰이는데, 조개(shell)를 지불하는 데서 유래되었다고 한다.}: The Origins of Money)\cite{shelling-out}에서 이를 훌륭하게 요약했다.
+\enquote{우리 인간은 상아, 조개, 특수 뼈와 같은 희귀한 재료로 만든 구슬, 다양한 종류의 장신구, 
+그리고 은과 금과 같은 희귀 금속까지 모든 종류의 것을 돈으로 사용했다.}
 
 \begin{quotation}\begin{samepage}
-\enquote{In this sense, it's more typical of a precious metal. Instead of the
-supply changing to keep the value the same, the supply is
-predetermined and the value changes.}
-\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, in a reply to Sepp
+\enquote{그 의미에서, 비트코인은 귀금속과 더 비슷하다. 가치를 유지하기 위해 공급량을 변경하는 대신
+ 공급량을 미리 결정하고 가치가 변동된다.}
+\begin{flushright} -- 사토시 나카모토\footnote{Satoshi Nakamoto, in a reply to Sepp
 Hasslberger \cite{satoshi-precious-metal}}
 \end{flushright}\end{samepage}\end{quotation}
 
+\begin{comment}
 Being the lazy creatures we are, we don't think too much about things
 which just work. Money, for most of us, works just fine. Like with our
 cars or our computers, most of us are only forced to think about the
@@ -59,36 +97,60 @@ life-savings vanish because of hyperinflation know the value of hard
 money, just like people who saw their friends and family vanish because
 of the atrocities of Nazi Germany or Soviet Russia know the value of
 privacy.
+\end{comment}
+인간은 게으른 동물이기 때문에 잘 작동하는 것에 대해 별로 걱정하지 않는다. 
+대부분의 돈은 잘 작동한다.
+자동차나 컴퓨터와 마찬가지로 고장이 난 후에야 문제점을 고민하기 시작한다. 
+나치 독일이나 소비에트 러시아의 잔학 행위 때문에 친구와 가족이 사라지는 것을 본 사람들은 
+프라이버시가 얼마나 중요한지 알고 있다.
+이와 마찬가지로 초인플레이션 때문에 저축한 돈이 사라지는 것을 본 사람들은 경화(hard money)의 가치를 이해한다.
 
+\begin{comment}
 The thing about money is that it is all-encompassing. Money is half of
 every transaction, which imbues the ones who are in charge with creating
 money with enormous power.
-
+\end{comment}
+돈은 우리의 모든 생활에 영향을 끼친다. 
+돈은 일상의 거래에 절반을 차지하고 있고, 
+돈을 만드는 일을 하는 사람들은 엄청난 힘을 가지고 있다.
 \begin{quotation}\begin{samepage}
-\enquote{Given that money is one half of every commercial transaction and that
-whole civilizations literally rise and fall based on the quality of
-their money, we are talking about an awesome power, one that flies
-under the cover of night. It is the power to weave illusions that
-appear real as long as they last. That is the very core of the
-Fed's power.}
-\begin{flushright} -- Ron Paul\footnote{Ron Paul, \textit{End the Fed} \cite{end-the-fed}}
+\enquote{돈이 모든 상업 거래의 절반을 차지하고 있고
+	돈의 질에 따라 모든 문명의 흥망성쇠가 결정되는 것을 감안할 때,
+	우리는 우리가 잘 모르는 사이에 일어나고 있는 엄청난 힘에 대해 이야기하고 있다.
+	그 힘은 그들이 원하는 환상을 진짜처럼 꾸미는데 사용되고 있다.
+	이것이 연방준비제도가 가진 힘의 핵심이다.}
+\begin{flushright} -- 론 폴\footnote{Ron Paul, \textit{End the Fed} \cite{end-the-fed}}
 \end{flushright}\end{samepage}\end{quotation}
 
-Bitcoin peacefully removes this power, since it does away with money
-creation and it does so without the use of force.
+%Bitcoin peacefully removes this power, since it does away with money
+%creation and it does so without the use of force.
+비트코인은 발권으로부터 오는 힘을 평화적인 방법으로 무력화한다. 
 
+
+\begin{comment}
 Money went through multiple iterations. Most iterations were good. They
 improved our money in one way or another. Very recently, however, the
 inner workings of our money got corrupted. Today, almost all of our
 money is simply created \textit{out of thin air} by the powers that be. To
 understand how this came to be I had to learn about the history and
 subsequent downfall of money.
+\end{comment}
+돈은 여러 차례 반복되고 있다. 
+대부분의 반복은 괜찮았다. 
+그들은 어떤 식으로든 돈을 개선해 왔다.
+그러나 최근 우리의 돈이 내부에서 손상되고 있다.
+오늘날 거의 모든 돈은 어떠한 힘에 의해 허공에서 간편하게 만들어진다.
+나는 돈이 어떻게 돌아가는지 제대로 이해하기 위해 돈의 역사와 돈의 몰락에 대해 배워야 했다.
 
+\begin{comment}
 If it will take a series of catastrophes or simply a monumental
 educational effort to correct this corruption remains to be seen. I pray
 to the gods of sound money that it will be the latter.
+\end{comment}
+이 문제를 바로잡기 위해서 재앙이 발생해야 하는지 아니면 훌륭한 교육이 필요한지 잘 모르겠다. 
+나는 건전한 돈의 신들에게 후자가 되기를 기도한다. 
 
-\paragraph{Bitcoin taught me what money is.}
+\paragraph{비트코인은 나에게 돈이 무엇인지 알려주었다.}
 
 % ---
 %

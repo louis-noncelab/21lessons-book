@@ -1,31 +1,50 @@
-\chapter{Cypherpunks Write Code}
+\chapter{사이퍼펑크는 코드를 작성한다.}
 \label{les:20}
 
-\begin{chapquote}{Lewis Carroll, \textit{Alice in Wonderland}}
-\enquote{I see you're trying to invent something.}
+\begin{chapquote}
+%{Lewis Carroll, \textit{Alice in Wonderland}}
+%\enquote{I see you're trying to invent something.}
+{루이스 캐롤, \textit{이상한 나라의 앨리스}}
+\enquote{네가 무엇을 발명하려고 하는지 보고있어.}
 \end{chapquote}
 
+\begin{comment}
 Like many great ideas, Bitcoin didn't come out of nowhere. It was made
 possible by utilizing and combining many innovations and discoveries in
 mathematics, physics, computer science, and other fields. While
 undoubtedly a genius, Satoshi wouldn't have been able to invent Bitcoin
 without the giants on whose shoulders he was standing on.
+\end{comment}
+많은 훌륭한 아이디어가 그렇듯, 
+비트코인은 갑자기 나온 것이 아니다.
+비트코인은 수학, 물리학, 컴퓨터 과학 및 기타 분야의 많은 혁신과 발견을 활용하고 결합하여 발명되었다.
+사토시는 의심할 여지 없이 천재이지만 위대한 거인들의 도움이 없었다면 비트코인을 발명할 수 없었을 것이다.
 
 \begin{quotation}\begin{samepage}
-\enquote{He who only wishes and hopes does not interfere actively with the
-course of events and with the shaping of his own destiny.}
-\begin{flushright} -- Ludwig von Mises\footnote{Ludwig von Mises, \textit{Human Action} \cite{human-action}}
+%\enquote{He who only wishes and hopes does not interfere actively with the
+%course of events and with the shaping of his own destiny.}
+%\begin{flushright} -- Ludwig von Mises\footnote{Ludwig von Mises, \textit{Human Action} \cite{human-action}}
+\enquote{희망뿐인 사람은 사건의 과정과 운명의 결정에 적극적으로 참여하지 않는다.}
+\begin{flushright} -- 루드비히 폰 미제스\footnote{Ludwig von Mises, \textit{Human Action} \cite{human-action}}
 \end{flushright}\end{samepage}\end{quotation}
 % > <cite>[Ludwig Von Mises]</cite>
 
+\begin{comment}
 One of these giants is Eric Hughes, one of the founders of the cypherpunk
 movement and author of \textit{A Cypherpunk's Manifesto}. It's hard to imagine
 that Satoshi wasn't influenced by this manifesto. It speaks of many things which
 Bitcoin enables and utilizes, such as direct and private transactions,
 electronic money and cash, anonymous systems, and defending privacy with
 cryptography and digital signatures.
+\end{comment}
+이 거인 중 한 사람은 사이퍼펑크 운동의 창시자이자 사이퍼펑크 선언문(A Cypherpunk's Manifesto)의 저자인 
+에릭 휴즈(Eric Hughes)이다.
+사토시가 분명 사이퍼펑크 선언문의 영향을 받지 않았다고 생각하기 어렵다.
+이 선언문은 개인 간의 직접거래, 전자화폐 및 현금, 익명 시스템, 암호화 및 디지털 서명에 기반한 프라이버시 등 
+비트코인에 적용된 많은 것들을 언급하고 있다.
 
 \begin{quotation}\begin{samepage}
+\begin{comment}
 \enquote{Privacy is necessary for an open society in the electronic age.
 [...] Since we desire privacy, we must ensure that each party to a
 transaction have knowledge only of that which is directly necessary
@@ -39,44 +58,78 @@ defending our privacy with cryptography, with anonymous mail
 forwarding systems, with digital signatures, and with electronic
 money.
 Cypherpunks write code.}
-\begin{flushright} -- Eric Hughes\footnote{Eric Hughes, A Cypherpunk's Manifesto \cite{cypherpunk-manifesto}}
+\end{comment}
+\enquote{프라이버시는 전자 시대의 열린 사회를 위해 필요하다. [...]
+우리는 프라이버시를 원하기 때문에 거래 당사자가 꼭 필요한 정보만을 갖도록 해야 한다. [...]
+따라서 열린 사회의 프라이버시를 위해 익명화된 거래 시스템이 필요하다.
+지금까지 현금은 이를 가능하게 했다. 익명 거래 시스템은 비밀 거래를 말하는 것은 아니다. [...]
+우리 사이퍼펑크는 익명 시스템 구축에 전념하고 있다.
+우리는 암호화, 익명의 메일 전송 시스템, 디지털 서명 및 전자화폐로 개인정보를 보호하고 있다.
+사이퍼펑크는 코드를 작성한다.}
+\begin{flushright} -- 에릭 휴즈\footnote{Eric Hughes, A Cypherpunk's Manifesto \cite{cypherpunk-manifesto}}
 \end{flushright}\end{samepage}\end{quotation}
 
+\begin{comment}
 Cypherpunks do not find comfort in hopes and wishes. They actively
 interfere with the course of events and shape their own destiny.
 Cypherpunks write code.
+\end{comment}
+사이퍼펑크는 희망만을 바라지 않는다.
+사이퍼펑크는 사건의 진행 과정을 적극적으로 개입하고 운명을 결정한다.
+사이퍼펑크는 코드를 작성한다.
 
+\begin{comment}
 Thus, in true cypherpunk fashion, Satoshi sat down and started to write
 code. Code which took an abstract idea and proved to the world that it
 actually worked. Code which planted the seed of a new economic reality.
 Thanks to this code, everyone can verify that this novel system actually
 works, and every 10 minutes or so Bitcoin proofs to the world that it is
 still living.
+\end{comment}
+사토시는 사이퍼펑크의 방식대로 앉아서 코드를 작성하기 시작했다.
+추상적인 아이디어를 가져와 실제로 작동한다는 것을 증명하기 위한 코드이다.
+새로운 경제적 희망의 씨앗을 심은 코드이다.
+이 코드 덕분에 모든 사람이 이 시스템이 실제로 동작한다는 것을 확인할 수 있으며
+비트코인은 10분마다 자신이 살아있음을 세상에 증명한다.
 
 \begin{figure}
   \includegraphics{assets/images/bitcoin-code-white.png}
-  \caption{Code excerpts from Bitcoin version 0.1}
+ % \caption{Code excerpts from Bitcoin version 0.1}
+ \caption{비트코인 버전 0.1의 일부}
   \label{fig:bitcoin-code-white}
 \end{figure}
 
+\begin{comment}
 To make sure that his innovation transcends fantasy and becomes reality, Satoshi
 wrote code to implement his idea before he wrote the whitepaper. He also made
 sure not to delay\footnote{\enquote{We shouldn't delay forever until every possible
 feature is done.} -- Satoshi Nakamoto~\cite{satoshi-delay}} any release forever.
 After all, \enquote{there's always going to be one more thing to do.}
+\end{comment}
+사토시는 백서를 작성하기 전에 이 혁신이 환상을 넘어 현실로 실현되도록 하기 위해 아이디어를 실현하는 코드를 작성하였다.
+그는 어떠한 릴리즈도 지연\footnote{\enquote{우리는 모든 기능이 완성될 때까지 한 차례도 지체되어서는 안된다.} -- 사토시 나카모토~\cite{satoshi-delay}}시키지 않았다.
+이렇게 말했을 뿐이다. \enquote{해야 할 일이 하나 더 늘었을 뿐입니다.}
+
 
 \begin{quotation}\begin{samepage}
-\enquote{I had to write all the code before I could convince myself that I
-could solve every problem, then I wrote the paper.}
-\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, Re: Bitcoin P2P e-cash paper \cite{satoshi-mail-code-first}}
+%\enquote{I had to write all the code before I could convince myself that I
+%could solve every problem, then I wrote the paper.}
+\enquote{모든 문제를 해결할 수 있다는 확신을 위해 코드를 먼저 작성해야 했고, 그런 다음 백서를 작성하였다.}
+\begin{flushright} -- 사토시 나카모토 \footnote{Satoshi Nakamoto, Re: Bitcoin P2P e-cash paper \cite{satoshi-mail-code-first}}
 \end{flushright}\end{samepage}\end{quotation}
 
+\begin{comment}
 In today's world of endless promises and doubtful execution, an exercise
 in dedicated building was desperately needed. Be deliberate, convince
 yourself that you can actually solve the problems, and implement the
 solutions. We should all aim to be a bit more cypherpunk.
+\end{comment}
+약속이 넘쳐나고 이 약속을 지키는 것이 의심스러운 오늘날의 세계에서 
+헌신적인 업적을 위한 움직임은 절실하게 필요했다.
+신중한 생각과 할 수 있다는 확신이 해결책을 만들어 낼 수 있다.
+우리는 모두 조금이라도 더 사이퍼펑크가 되어야 한다.
 
-\paragraph{Bitcoin taught me that cypherpunks write code.}
+\paragraph{비트코인은 사이퍼펑크는 코드를 작성한다는 것을 가르쳐주었다.}
 
 % ---
 %

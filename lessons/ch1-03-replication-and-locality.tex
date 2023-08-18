@@ -1,60 +1,71 @@
-\chapter{Replication and Locality}
+\chapter{복제와 지역성}
 \label{les:3}
 
-\begin{chapquote}{Lewis Carroll, \textit{Alice in Wonderland}}
-Next came an angry voice -- the rabbit's -- \enquote{Pat, Pat! where are you?}
+\begin{chapquote}{루이스 캐롤, \textit{이상한 나라의 앨리스}}
+토끼의 화난 목소리가 들려왔다 \enquote{팻, 팻! 어디야?}
 \end{chapquote}
 
-Quantum mechanics aside, locality is a non-issue in the physical world.
-The question \textit{\enquote{Where is X?}} can be answered in a meaningful way, no
-matter if X is a person or an object. In the digital world, the question
-of \textit{where} is already a tricky one, but not impossible to answer. Where
-are your emails, really? A bad answer would be \enquote{the cloud}, which is
-just someone else's computer. Still, if you wanted to track down every
-storage device which has your emails on it you could, in theory, locate
-them.
+%Quantum mechanics aside, locality is a non-issue in the physical world.
+%The question \textit{\enquote{Where is X?}} can be answered in a meaningful way, no
+%matter if X is a person or an object. In the digital world, the question
+%of \textit{where} is already a tricky one, but not impossible to answer. Where
+%are your emails, really? A bad answer would be \enquote{the cloud}, which is
+%just someone else's computer. Still, if you wanted to track down every
+%storage device which has your emails on it you could, in theory, locate
+%them.
+복잡한 양자역학은 제쳐두고, 지역성은 물리 세계에서 문제가 되지 않는다. \enquote{X가 어디에 있지?}라는 
+질문은 X가 사람이건 물건이건 정확히 대답할 수 있다. 하지만 디지털 세계에서 이 질문은 
+조금 까다롭긴 하지만 대답은 가능하다. 이메일이 어디에 있냐는 질문에 성의 없는 대답은 \enquote{클라우드에 있어} 일 것이다.
+그래도 이론적으로 모든 저장장치를 추적하면 이메일의 위치를 찾을 수 있을 것이다.
 
-With bitcoin, the question of \enquote{where} is \textit{really} tricky. Where,
-exactly, are your bitcoins?
-
-\begin{quotation}\begin{samepage}
-\enquote{I opened my eyes, looked around, and asked the inevitable, the
-traditional, the lamentably hackneyed postoperative question: `Where
-am l?'}
-\begin{flushright} -- Daniel Dennett\footnote{Daniel Dennett, \textit{Where Am I?}~\cite{where-am-i}}
-\end{flushright}\end{samepage}\end{quotation}
-
-The problem is twofold: First, the distributed ledger is distributed by
-full replication, meaning the ledger is everywhere. Second, there are no
-bitcoins. Not only physically, but \textit{technically}.
-
-Bitcoin keeps track of a set of unspent transaction outputs, without
-ever having to refer to an entity which represents a bitcoin. The
-existence of a bitcoin is inferred by looking at the set of unspent
-transaction outputs and calling every entry with 100 million base
-units a bitcoin.
+%With bitcoin, the question of \enquote{where} is \textit{really} tricky. Where,
+%exactly, are your bitcoins?
+비트코인의 경우 \enquote{비트코인은 어디에 있어?}라는 질문은 정말 까다롭다. 비트코인은 정말 어디에 있는 걸까?
 
 \begin{quotation}\begin{samepage}
-\enquote{Where is it, at this moment, in transit? [...] First, there are no
-bitcoins. There just aren't. They don't exist. There are ledger
-entries in a ledger that's shared [...] They don't exist in any
-physical location. The ledger exists in every physical location,
-essentially. Geography doesn't make sense here --- it is not going to
-help you figuring out your policy here.}
-\begin{flushright} -- Peter Van Valkenburgh\footnote{Peter Van Valkenburgh on the \textit{What Bitcoin Did} podcast, episode 49 \cite{wbd049}}
+\enquote{나는 수술 후 눈을 뜨고 주의를 둘러보며 수 없이 물었다. `여기가 어디야?'}
+\begin{flushright} -- 다니엘 데넷\footnote{Daniel Dennett, \textit{Where Am I?}~\cite{where-am-i}}
 \end{flushright}\end{samepage}\end{quotation}
 
-So, what do you actually own when you say \textit{\enquote{I have a bitcoin}} if
-there are no bitcoins? Well, remember all these strange words which you were
-forced to write down by the wallet you used? Turns out these magic words are
-what you own: a magic spell\footnote{The Magic Dust of Cryptography: How digital
-information is changing our society \cite{gigi:magic-spell}} which can be used
-to add some entries to the public ledger --- the keys to \enquote{move} some bitcoins.
-This is why, for all intents and purposes, your private keys \textit{are} your
-bitcoins. If you think I'm making all of this up feel free to send me your
-private keys.
+%The problem is twofold: First, the distributed ledger is distributed by
+%full replication, meaning the ledger is everywhere. Second, there are no
+%bitcoins. Not only physically, but \textit{technically}.
+문제는 두 가지다. 첫째, 분산 원장은 모든 기록을 복제하여 어디에나 있다. 둘째, 비트코인은 없다. 
+물리적일 뿐만 아니라 기술적으로도 없다.
 
-\paragraph{Bitcoin taught me that locality is a tricky business.}
+%Bitcoin keeps track of a set of unspent transaction outputs, without
+%ever having to refer to an entity which represents a bitcoin. The
+%existence of a bitcoin is inferred by looking at the set of unspent
+%transaction outputs and calling every entry with 100 million base
+%units a bitcoin.
+비트코인은 미지불 트랜잭션 출력(UTXO)의 집합에 기록된다.
+모든 미지불 트랜잭션 출력을 탐색하여 1억을 단위\footnote{역자: 1BTC = 1sats}로 기록되는 모든 데이터를 호출하면 비트코인의 존재를 추론할 수 있다.
+
+\begin{quotation}\begin{samepage}
+\enquote{그것은 지금 어디에 있는가? 이 순간 어느 곳을 지나는 중인가?[...] 무엇보다 비트코인은
+없다. 정말로 없다. 존재하지 않는다. 장부 항목이 공유된 장부상에 존재한다. [...] 
+비트코인은 물리적 위치에 존재하지 않는다. 본질적으로 장부는 모든 물리적 위치에 존재한다.
+지리학의 상식은 통하지 않는다. 당신의 상식은 여기서 통하지 않는다.}
+\begin{flushright} -- 피터 반 발켄버그\footnote{Peter Van Valkenburgh on the What Bitcoin Did podcast, episode 49 \cite{wbd049}}
+\end{flushright}\end{samepage}\end{quotation}
+
+%So, what do you actually own when you say \textit{\enquote{I have a bitcoin}} if
+%there are no bitcoins? Well, remember all these strange words which you were
+%forced to write down by the wallet you used? Turns out these magic words are
+%what you own: a magic spell\footnote{The Magic Dust of Cryptography: How digital
+%information is changing our society \cite{gigi:magic-spell}} which can be used
+%to add some entries to the public ledger --- the keys to \enquote{move} some bitcoins.
+%This is why, for all intents and purposes, your private keys \textit{are} your
+%bitcoins. If you think I'm making all of this up feel free to send me your
+%private keys.
+비트코인이 존재하지 않는다면 \enquote{난 비트코인을 갖고 있다.}라고 말할 때, 당신이 실제
+소유하고 있는 것이 무엇일까? 당신이 사용했던 지갑에 의해 강제로 적어 두어야 했던 이상한 단어들을 기억하는가?
+이 마법의 단어\footnote{The Magic Dust of Cryptography: How digital
+information is changing our society \cite{gigi:magic-spell}}는 당신이 공개된 장부에 항목을 추가하는 데
+사용할 수 있는, 즉 비트코인을 전송할 때 필요한 열쇠이다. 그렇기 때문에 당신의 개인키가 자체가 비트코인이다. 나의 
+말이 거짓 같다면, 당신의 개인키를 나에게 보내라. 
+
+\paragraph{비트코인은 지역성이 얼마나 까다로운 비즈니스인지 나에게 알려주었다.}
 
 % ---
 %

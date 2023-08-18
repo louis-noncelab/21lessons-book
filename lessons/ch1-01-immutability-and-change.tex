@@ -1,82 +1,117 @@
-\chapter{Immutability and Change}
+\chapter{불변성과 변화}
 \label{les:1}
 
-\begin{chapquote}{Alice}
-\enquote{I wonder if I've been changed in the night. Let me think. Was I the same when I
-got up this morning? I almost think I can remember feeling a little different.
-But if I'm not the same, the next question is `Who in the world am I?' Ah,
-that's the great puzzle!}
+%\begin{chapquote}{Alice}
+%\enquote{I wonder if I've been changed in the night. Let me think. Was I the same when I
+%got up this morning? I almost think I can remember feeling a little different.
+%But if I'm not the same, the next question is `Who in the world am I?' Ah,
+%that's the great puzzle!}
+%\end{chapquote}$
+\begin{chapquote}{앨리스}
+\enquote{혹시 내가 변한 건가?
+왠지 다른 느낌이 들었거든. 만약에 내가 다른 모습이라면 다음 질문은 `도대체 나는 누굴까?' 야.
+아, 그것은 너무 큰 수수께끼야!}
 \end{chapquote}
 
-Bitcoin is inherently hard to describe. It is a \textit{new thing}, and any
-attempt to draw a comparison to previous concepts -- be it by calling
-it digital gold or the internet of money -- is bound to fall short of
-the whole. Whatever your favorite analogy might be, two aspects of
-Bitcoin are absolutely essential: decentralization and immutability.
+
+
+%Bitcoin is inherently hard to describe. It is a \textit{new thing}, and any
+%attempt to draw a comparison to previous concepts -- be it by calling
+%it digital gold or the internet of money -- is bound to fall short of
+%the whole. Whatever your favorite analogy might be, two aspects of
+%Bitcoin are absolutely essential: decentralization and immutability.
+비트코인은 본질적으로 설명하기 어렵다. 
+비트코인은 새로운 개념이고, 디지털 금, 인터넷 돈 등으로 설명하기엔 뭔가 부족해 보인다. 
+당신이 가장 좋아하는 비유가 무엇이든 비트코인의 두 가지 측면은 절대적으로 필요하다. 
+탈중앙성과 불변성이 그것이다.
 
 \paragraph{}
-One way to think about Bitcoin is as an automated social contract\footnote{Hasu,
-Unpacking Bitcoin's Social Contract~\cite{social-contract}}. The software is
-just one piece of the puzzle, and hoping to change Bitcoin by changing the
-software is an exercise in futility. One would have to convince the rest of the
-network to adopt the changes, which is more a psychological effort than a
-software engineering one.
+%One way to think about Bitcoin is as an automated social contract\footnote{Hasu,
+%Unpacking Bitcoin's Social Contract~\cite{social-contract}}. The software is
+%just one piece of the puzzle, and hoping to change Bitcoin by changing the
+%software is an exercise in futility. One would have to convince the rest of the
+%network to adopt the changes, which is more a psychological effort than a
+%software engineering one.
+비트코인을 이해하는 한 가지 방법은 자동화된 사회 계약으로 보는 것이다\footnote{Hasu, Unpacking Bitcoin's Social Contract~\cite{social-contract}}. 
+비트코인 소프트웨어는 네트워크의 일부분일 뿐이다. 
+소프트웨어를 변경한다고 해서 비트코인을 변경할 수 없기 때문이다. 
+변경을 위해서는 네트워크의 나머지 참여자들을 설득 해야 하는데, 
+이는 소프트웨어적 노력보다 심리적 노력이 더 필요하다.
+
 
 \paragraph{}
-The following might sound absurd at first, like so many other things in
-this space, but I believe that it is profoundly true nonetheless: You
-won't change Bitcoin, but Bitcoin will change you.
+%The following might sound absurd at first, like so many other things in
+%this space, but I believe that it is profoundly true nonetheless: You
+%won't change Bitcoin, but Bitcoin will change you.
+당신은 비트코인을 변경하지 않지만, 비트코인은 당신을 변하게 할 수 있다.
+조금 터무니없이 들리겠지만, 나는 이를 사실이라 믿는다.
+
 
 \begin{quotation}\begin{samepage}
-\enquote{Bitcoin will change us more than we will change it.}
-\begin{flushright} -- Marty Bent\footnote{Tales From the Crypt~\cite{tftc21}}
+\enquote{우리가 비트코인을 변하게 하는 것 보다 비트코인이 우리를 더 변하게 할 것이다.}
+\begin{flushright} -- 마티 벤트\footnote{Tales From the Crypt~\cite{tftc21}}
 \end{flushright}\end{samepage}\end{quotation}
 
-It took me a long time to realize the profundity of this. Since Bitcoin
-is just software and all of it is open-source, you can simply change
-things at will, right? Wrong. \textit{Very} wrong. Unsurprisingly, Bitcoin's
-creator knew this all too well.
+%It took me a long time to realize the profundity of this. Since Bitcoin
+%is just software and all of it is open-source, you can simply change
+%things at will, right? Wrong. \textit{Very} wrong. Unsurprisingly, Bitcoin's
+%creator knew this all too well.
+나는 이 심오함을 알아차리는 데 꽤 오랜 시간이 걸렸다.
+비트코인은 단지 소프트웨어일 뿐이고 오픈 소스이기 때문에 
+마음대로 변경할 수 있다고 생각했지만 매우 잘못된 생각이었다. 
+비트코인 창시자는 이를 너무 잘 알고 있었다.
 
 \begin{quotation}\begin{samepage}
-\enquote{The nature of Bitcoin is such that once version 0.1 was released, the core
-design was set in stone for the rest of its lifetime.}
-\begin{flushright} -- Satoshi Nakamoto\footnote{BitcoinTalk forum post: `Re:
+%\enquote{The nature of Bitcoin is such that once version 0.1 was released, the core
+%design was set in stone for the rest of its lifetime.}
+\enquote{비트코인의 본질은 비트코인 0.1 버전이 출시됨과 동시에 비트코인이 사라질 때까지 
+핵심 설계가 돌처럼 고정된다는 것이다.}
+\begin{flushright} -- 사토시 나카모토\footnote{BitcoinTalk forum post: `Re:
 Transactions and Scripts\ldots'~\cite{satoshi-set-in-stone}}
 \end{flushright}\end{samepage}\end{quotation}
 
-Many people have attempted to change Bitcoin's nature. So far all of
-them have failed. While there is an endless sea of forks and altcoins,
-the Bitcoin network still does its thing, just as it did when the first
-node went online. The altcoins won't matter in the long run. The forks
-will eventually starve to death. Bitcoin is what matters. As long as our
-fundamental understanding of mathematics and/or physics doesn't change,
-the Bitcoin honeybadger will continue to not care.
+%Many people have attempted to change Bitcoin's nature. So far all of
+%them have failed. While there is an endless sea of forks and altcoins,
+%the Bitcoin network still does its thing, just as it did when the first
+%node went online. The altcoins won't matter in the long run. The forks
+%will eventually starve to death. Bitcoin is what matters. As long as our
+%fundamental understanding of mathematics and/or physics doesn't change,
+%the Bitcoin honeybadger will continue to not care.
+많은 사람이 비트코인의 본질을 변경하고자 시도하였다. 그러나 모든 시도는 실패하였다. 알트코인이 수많은
+포크를 진행하는 동안 비트코인 네트워크는 첫 번째 노드가 구동될 때와 같이 여전히 제 역할을 하고 있다.
+알트코인은 장기적인 관점을 중요하지 않게 생각한다. 포크는 결국 굶어 죽을 것이다. 수학적, 물리학적 근본적인 
+이해가 변하지 않는 한 비트코인 벌꿀오소리는 변하지 않을 것이다.
 
 \begin{quotation}\begin{samepage}
-\enquote{Bitcoin is the first example of a new form of life. It lives and
-breathes on the internet. It lives because it can pay people to keep
-it alive. [\ldots] It can't be changed. It can't be argued with. It
-can't be tampered with. It can't be corrupted. It can't be stopped.
-[\ldots] If nuclear war destroyed half of our planet, it would continue
-to live, uncorrupted.}
-\begin{flushright} -- Ralph Merkle\footnote{DAOs, Democracy and
+\enquote{비트코인은 삶의 새로운 형태를 보여준다. 비트코인은 인터넷에서 살아 숨 쉰다. 비트코인은
+사람들이 생존을 위해 구매를 지속하는 한 살아있을 것이다. [\ldots] 비트코인은 변하지 않는다. 논쟁의 여지가 없다.
+조작될 수도, 손상될 수도, 멈출 수도 없다. [\ldots] 핵전쟁으로 지구의 절반이 파괴되어도 
+부패하지 않고 살아남아 있을 것이다. }
+\begin{flushright} -- 랄프 머클\footnote{DAOs, Democracy and
 Governance,~\cite{merkle-dao}}
 \end{flushright}\end{samepage}\end{quotation}
+ 
 
-The heartbeat of the Bitcoin network will outlast all of ours.
-
-~
-
-Realizing the above changed me way more than the past blocks of the Bitcoin
-blockchain ever will. It changed my time preference, my understanding of
-economics, my political views, and so much more. Hell, it is even changing
-people's diets\footnote{Inside the World of the Bitcoin
-Carnivores,~\cite{carnivores}}. If all of this sounds crazy to you, you're in
-good company. All of this is crazy, and yet it is happening.
+%The heartbeat of the Bitcoin network will outlast all of ours.
+비트코인 네트워크의 심장박동은 모든 사람보다 오래 지속될 것이다.
 
 ~
 
-\paragraph{Bitcoin taught me that it won't change. I will.}
+%Realizing the above changed me way more than the past blocks of the Bitcoin
+%blockchain ever will. It changed my time preference, my understanding of
+%economics, my political views, and so much more. Hell, it is even changing
+%people's diets\footnote{Inside the World of the Bitcoin
+%Carnivores,~\cite{carnivores}}. If all of this sounds crazy to you, you're in
+%good company. All of this is crazy, and yet it is happening.
+
+위의 내용을 깨닫는 것은 나를 변화시키는 것이었다. 
+이 사실은 나의 시간선호도, 경제에 대한 이해, 정치적 견해 등을 바꾸었다. 
+심지어 사람들의 식단도 바꾼다\footnote{Inside the World of the Bitcoin Carnivores,~\cite{carnivores}}. 
+이 말들이 이상하게 들린다면 당신은 좋은 사회에 있는 것이다. 
+모두가 미쳤고 미친 짓은 계속되고 있다.
+~
+
+\paragraph{비트코인은 비트코인이 변하지 않는다는 것을 알려주었다. 단지 내가 변할 뿐이다.}
 
 % ---
 %

@@ -1,12 +1,15 @@
-\chapter{Strength in Numbers}
+\chapter{숫자의 강력함}
 \label{les:15}
 
-\begin{chapquote}{Lewis Carroll, \textit{Alice in Wonderland}}
-\enquote{Let me see: four times five is twelve, and four times six is thirteen, and
-four times seven is fourteen—oh dear! I shall never get to twenty at this
-rate!}
+\begin{chapquote}{루이스 캐롤, \textit{이상한 나라의 앨리스}}
+\enquote{어디 보자, 
+	4 곱하기 5는 20, 
+	4 곱하기 6은 13, 
+	4 곱하기 7은 14, 
+	오 이런! 이렇게는 20까지 갈 수 없어!}
 \end{chapquote}
 
+\begin{comment}
 Numbers are an essential part of our everyday life. Large numbers,
 however, aren't something most of us are too familiar with. The largest
 numbers we might encounter in everyday life are in the range of
@@ -14,32 +17,46 @@ millions, billions, or trillions. We might read about millions of people
 in poverty, billions of dollars spent on bank bailouts, and trillions of
 national debt. Even though it's hard to make sense of these headlines,
 we are somewhat comfortable with the size of those numbers.
+\end{comment}
+숫자는 일상생활에 매우 중요하다. 
+그러나 우리는 매우 큰 수에는 익숙하지 않다.
+우리가 일상생활에서 접할 수 있는 가장 큰 숫자는 수백(millions)만, 수십억(billions) 또는 수조(trillions)에 불과하다.
+수백만 명의 빈곤층, 수십억 달러의 구제 금융, 수조 달러의 국가 부채 정도 우리가 접할 수 있는 큰 수일 것이다.
+이러한 기사는 이해하기 어렵지만 이 정도의 숫자는 어렵지 않게 받아들일 수 있다.
 
+\begin{comment}
 Although we might seem comfortable with billions and trillions, our
 intuition already starts to fail with numbers of this magnitude. Do you
 have an intuition how long you would have to wait for a
 million/billion/trillion seconds to pass? If you are anything like me,
 you are lost without actually crunching the numbers.
+\end{comment}
+수십억, 수조의 수는 읽기에 익숙할지 몰라도, 수의 규모에서 직관적으로 감이 잘 오지 않기 시작한다.
+백만 초, 십억 초, 일조 초가 지날 때까지 얼마나 기다려야 하는지 감이 오는가?
+당신이 나와 같은 사람이라면 숫자 계산을 포기해 버릴 것이다.
 
+\begin{comment}
 Let's take a closer look at this example: the difference between each is an
 increase by three orders of magnitude: $10^6$, $10^9$, $10^{12}$. Thinking about
 seconds is not very useful, so let's translate this into something we can wrap
 our head around:
+\end{comment}
+다른 친숙한 예를 들어보자. $10^6$, $10^9$, $10^{12}$은 세 자릿수가 증가한다. 
+초 단위를 생각하는 것은 감을 잡기 어려우니 조금 더 쉽게 접근해 보자.
 
 \begin{itemize}
-  \item $10^6$: One million seconds was $1 \frac{1}{2}$ weeks ago.
-  \item $10^9$: One billion seconds was almost 32 years ago.
-  \item $10^{12}$: One trillion seconds ago Manhattan was covered under a thick
-  layer of ice.\footnote{One trillion seconds ($10^{12}$) was $31710$ years ago. The Last Glacial
-  Maximum was $33,000$ years ago.~\cite{wiki:LGM}}
+  \item $10^6$: 100만 초 전은 $1 \frac{1}{2}$주 전에 해당한다.
+  \item $10^9$: 10억 초 전은 는 32년 전에 해당한다.
+  \item $10^{12}$: 1조 초 전에는 맨하탄이 빙하 속에 묻혀있었다.\footnote{1조($10^{12}$)초는 $31,710$ 년이다. 최후의 빙하는 $33,000$ 년 전이다.~\cite{wiki:LGM}}
 \end{itemize}
 
 \begin{figure}
   \includegraphics{assets/images/xkcd-1225.png}
-  \caption{About 1 trillion seconds ago. Source: xkcd 1225}
+  \caption{약 1조초 전 각 도시의 빙하 두께 (출처: xkcd 1225)}
   \label{fig:xkcd-1225}
 \end{figure}
 
+\begin{comment}
 As soon as we enter the beyond-astronomical realm of modern
 cryptography, our intuition fails catastrophically. Bitcoin is built
 around large numbers and the virtual impossibility of guessing them.
@@ -47,7 +64,13 @@ These numbers are way, way larger than anything we might encounter in
 day-to-day life. Many orders of magnitude larger. Understanding how
 large these numbers truly are is essential to understanding Bitcoin as a
 whole.
+\end{comment}
+현대 암호학에서 주로 사용하는 천문학적 영역의 수에 도달하면 훨씬 더 감이 없어진다.
+비트코인은 천문학적으로 큰 숫자와 이를 추측하는 것이 불가능하다는 사실을 활용한다.
+비트코인에서 사용하는 천문학적 숫자는 우리가 일상생활에서 접할 수 있는 그 어떤 숫자보다 훨씬 크다. 자릿수가 크면 실제 숫자가 더 커진다.
+이 숫자가 실제로 얼마나 큰지를 파악하는 것은 비트코인을 이해하는 데 꼭 필요하다.
 
+\begin{comment}
 Let's take SHA-256\footnote{SHA-256 is part of the SHA-2 family of cryptographic
 hash functions developed by the NSA.~\cite{wiki:sha2}}, one of the hash
 functions\footnote{Bitcoin uses SHA-256 in its block hashing
@@ -55,23 +78,52 @@ algorithm.~\cite{btcwiki:block-hashing}} used in Bitcoin, as a concrete example.
 It is only natural to think about 256 bits as \enquote{two hundred fifty-six,} which
 isn't a large number at all. However, the number in SHA-256 is talking about
 orders of magnitude --- something our brains are not well-equipped to deal with.
+\end{comment}
+비트코인에서 사용하는 해시 함수인 SHA-256\footnote{SHA-256은 NSA에서 개발한. SHA-2 계열의  암호학 해시함수이다.~\cite{wiki:sha2}}
+을 예로 들어보자.\footnote{SHA-256은 비트코인에서 블록 해시 알고리즘을 사용된다.~\cite{btcwiki:block-hashing}} 
+여기서 사용되는 숫자 256비트는 단순하게 "이백오십육"이라고 생각할 수 있다. 256은 결코 큰 숫자가 아니다.
+그러나 SHA-256에서 256은 자릿수를 의미한다. 
+이 숫자는 우리의 두뇌에서 처리할 수 없는 규모이다.
 
+\begin{comment}
 While bit length is a convenient metric, the true meaning of 256-bit
 security is lost in translation. Similar to the millions ($10^6$) and
 billions ($10^9$) above, the number in SHA-256 is about orders of magnitude
 ($2^{256}$).
-
+\end{comment}
+비트 길이는 편리한 자릿수 척도이지만, 숫자를 자릿수로 변환하는 과정에서 256비트 보안성의 진정한 의미를 망각한다.
+수백만($10^6$)과 수십억($10^9$)의 사례에서 본 것처럼, SHA-256에서 사용하는 숫자의 자리수는 엄청나게 크다.($2^{256}$).
+\begin{comment}
 So, how strong is SHA-256, exactly?
-
+\end{comment}
+실제 SHA-256은 정확히 얼마나 강력할까?
+\begin{comment}
 \begin{quotation}\begin{samepage}
 \enquote{SHA-256 is very strong. It's not like the incremental step from MD5
 to SHA1. It can last several decades unless there's some massive
 breakthrough attack.}
 \begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, in a reply to questions about SHA-256 collisions. \cite{satoshi-sha256}}
 \end{flushright}\end{samepage}\end{quotation}
+\end{comment}
+\begin{quotation}\begin{samepage}
+		\enquote{SHA-256은 매우 강력하다. MD5에서 SHA1로의 증가와는 차원이 다르다.
+		광범위한 대규모 해킹 공격이 없는 한 수십 년 동안 끄떡없다.}
+		\begin{flushright} --사토시 나카모토\footnote{Satoshi Nakamoto, in a reply to questions about SHA-256 collisions. \cite{satoshi-sha256}}
+\end{flushright}\end{samepage}\end{quotation}
 
-Let's spell things out. $2^{256}$ equals the following number:
 
+%Let's spell things out. $2^{256}$ equals the following number:
+$2^{256}$이 얼마나 큰 숫자인지 알아보자.
+\footnote{
+	저자: 원문에는 다음과 같이 표현되어 있다. \\
+	115 quattuorvigintillion 792 trevigintillion 89 duovigintillion 237
+	unvigintillion 316 vigintillion 195 novemdecillion 423 octodecillion 570
+	septendecillion 985 sexdecillion 8 quindecillion 687 quattuordecillion 907
+	tredecillion 853 duodecillion 269 undecillion 984 decillion 665 nonillion
+	640 octillion 564 septillion 39 sextillion 457 quintillion 584 quadrillion 7
+	trillion 913 billion 129 million 639 thousand 936.}
+
+\begin{comment}
 \begin{quotation}\begin{samepage}
     115 quattuorvigintillion 792 trevigintillion 89 duovigintillion 237
     unvigintillion 316 vigintillion 195 novemdecillion 423 octodecillion 570
@@ -80,15 +132,29 @@ Let's spell things out. $2^{256}$ equals the following number:
     640 octillion 564 septillion 39 sextillion 457 quintillion 584 quadrillion 7
     trillion 913 billion 129 million 639 thousand 936.
 \end{samepage}\end{quotation}
+\end{comment}
+\begin{quotation}
+	\begin{samepage}
+		115,792,089,237,316,195,423,570,985,008,687,907,853,
+		269,984,665,640,564,039,457,584,007,913,129,639,936
+		\end{samepage}
+\end{quotation}
 
+\begin{comment}
 That's a lot of nonillions! Wrapping your head around this number is
 pretty much impossible. There is nothing in the physical universe to
 compare it to. It is far larger than the number of atoms in the
 observable universe. The human brain simply isn't made to make sense of
 it.
+\end{comment}
+엄청나게 큰 숫자이다. 이 숫자의 감을 잡는 것은 불가능하다. 
+우리가 사는 우주의 어떤 숫자와도 비교할 수 없다.
+관측할 수 있는 우주의 원자 수보다 훨씬 많다. 
+인간의 두뇌로 인지하는 것은 불가능하다.
 
 \newpage
 
+\begin{comment}
 One of the best visualizations of the true strength of SHA-256 is a video by
 Grant Sanderson. Aptly named \textit{\enquote{How secure is 256 bit
 security?}}\footnote{Watch the video at \url{https://youtu.be/S9JGmA5_unY}} it
@@ -96,20 +162,39 @@ beautifully shows how large a 256-bit space is. Do yourself a favor and take the
 five minutes to watch it. As all other \textit{3Blue1Brown} videos it is not
 only fascinating but also exceptionally well made. Warning: You might fall down
 a math rabbit hole.
-
+\end{comment}
+SHA-256의 진정한 장점을 잘 시각화한 것 중 하나는 그랜트 샌더슨의 영상이다.
+\enquote{How secure is 256 bit
+		security?}\footnote{\url{https://youtu.be/S9JGmA5_unY}}를 보면
+256비트의 공간이 얼마나 크고 아름다운지 알 수 있다. 잠시 시간을 내어 5분간 감상 해보자.
+3Blue1Brown에서 만든 다른 영상도 그렇지만 매혹적일 뿐만 아니라 매우 잘 만들어졌다.
+단, 수학 토끼 굴에 빠질 수 있으니 주의하라.
+	
+\begin{comment}
 \begin{figure}
   \includegraphics{assets/images/youtube-vid-inverted.png}
   \caption{Illustration of SHA-256 security. Original graphic by Grant Sanderson aka 3Blue1Brown.}
   \label{fig:youtube-vid-inverted}
 \end{figure}
+\end{comment}
+\begin{figure}
+	\includegraphics{assets/images/youtube-vid-inverted.png}
+	\caption{그랜트 샌더슨 영상의 SHA-256을 설명하기 위한 일러스트}
+	\label{fig:youtube-vid-inverted}
+\end{figure}
 
+\begin{comment}
 Bruce Schneier~\cite{web:schneier} used the physical limits of computation to put this
 number into perspective: even if we could build an optimal computer,
 which would use any provided energy to flip bits perfectly~\cite{wiki:landauer}, build a
 Dyson sphere\footnote{A Dyson sphere is a hypothetical megastructure that completely encompasses a star and captures a large percentage of its power output.~\cite{wiki:dyson}} around our sun, and let it run for 100 billion billion
 years, we would still only have a $25\%$ chance to find a needle in a
 256-bit haystack.
+\end{comment}
+브루스 슈나이어~\cite{web:schneier}는 계산의 물리적 한계를 사용하여 이 숫자를 원근감 있게 표현하였다.
+태양 주위에 다이슨 구체\footnote{다이슨 구체는 행성을 완전히 덮어서 엄청난 전력을 생산하는 가상의 거대 구조물이다.~\cite{wiki:dyson}}를 완전히 덮어서 1000억 년 동안 생산된 모든 에너지를 비트를 뒤집는 데만 사용한다고 하더라도 256비트에서 바늘을 찾을 확률은 $25\%$밖에 되지 않는다.
 
+\begin{comment}
 \begin{quotation}\begin{samepage}
 \enquote{These numbers have nothing to do with the technology of the devices;
 they are the maximums that thermodynamics will allow. And they
@@ -118,13 +203,27 @@ infeasible until computers are built from something other than matter
 and occupy something other than space.}
 \begin{flushright} -- Bruce Schneier\footnote{Bruce Schneier, \textit{Applied Cryptography} \cite{bruce-schneier}}
 \end{flushright}\end{samepage}\end{quotation}
+\end{comment}
+\begin{quotation}\begin{samepage}
+		\enquote{이 숫자는 어떤 기술과도 관련이 없다. 
+			열역학이 허용하는 최대의 값이다.
+			컴퓨터가 완전히 다른 물질로 만들어지고, 
+			완전히 다른 차원의 공간을 확보하기 전까지 
+			256비트 키에 대한 무차별 대입 공격은 불가능하다.}
+		\begin{flushright} -- 브루스 슈나이어\footnote{Bruce Schneier, \textit{Applied Cryptography} \cite{bruce-schneier}}
+\end{flushright}\end{samepage}\end{quotation}
 
-
+\begin{comment}
 It is hard to overstate the profoundness of this. Strong cryptography
 inverts the power-balance of the physical world we are so used to.
 Unbreakable things do not exist in the real world. Apply enough force,
 and you will be able to open any door, box, or treasure chest.
+\end{comment}
+이 심오함은 과장이 필요 없다. 
+강력한 암호학은 물리적 세계에서 올 수 있는 상상력을 초월한다.
+현실 세계에서는 어떠한 문이나 보물상자도 충분한 물리적 힘을 가하면 열 수 있다.
 
+\begin{comment}
 Bitcoin's treasure chest is very different. It is secured by strong
 cryptography, which does not give way to brute force. And as long as the
 underlying mathematical assumptions hold, brute force is all we have.
@@ -132,24 +231,42 @@ Granted, there is also the option of a global \$5 wrench attack (Figure~\ref{fig
 But torture won't work for all bitcoin addresses, and the cryptographic
 walls of bitcoin will defeat brute force attacks. Even if you come at it
 with the force of a thousand suns. Literally.
+\end{comment}
+비트코인의 보물 상자는 우리가 알고 있는 상자와 다르다. 
+이 상자는 어떠한 무차별 대입 공격에도 굴복하지 않는 강력한 암호학으로 보호된다. 
+우리의 수학적 상식 안에서는 무차별 대입 공격 외의 딱히 다른 공격 방법도 없다. 
+물론 \$5 렌치 공격(Figure~\ref{fig:xkcd-538})이 발생할 수도 있다. 
+그러나 이러한 종류의 공격은 비트코인 주소 공격과는 다르다. 
+태양 천 개의 힘으로 공격하더라도 비트코인 암호학 장벽은 무너뜨릴 수 없다. 
 
 \begin{figure}
   \centering
   \includegraphics[width=8cm]{assets/images/xkcd-538.png}
-  \caption{\$5 wrench attack. Source: xkcd 538}
+  \caption{\$5 렌치공격 (출처: xkcd 538)}
   \label{fig:xkcd-538}
 \end{figure}
 
+\begin{comment}
 This fact and its implications were poignantly summarized in the call
 to cryptographic arms: \textit{\enquote{No amount of coercive force will ever solve
-a math problem.}}
+a math problem.}
+\end{comment}
+이 사실과 의미는 암호학 무기의 부름(A Call to Cryptographic Arms)에서 예리하게 요약되어 있다.
+\enquote{어떠한 물리력도 수학 문제를 풀 수 없다.}
 
+\begin{comment}
 \begin{quotation}\begin{samepage}
 \enquote{It isn't obvious that the world had to work this way. But somehow the
 universe smiles on encryption.}
 \begin{flushright} -- Julian Assange\footnote{Julian Assange, \textit{A Call to Cryptographic Arms} \cite{call-to-cryptographic-arms}}
 \end{flushright}\end{samepage}\end{quotation}
+\end{comment}
+\begin{quotation}\begin{samepage}
+		\enquote{세상이 이런 식으로 작동하는 것이 맞는지는 잘 모르겠다. 하지만 어쨌든 우주는 암호학을 향해 미소짓는다.}
+		\begin{flushright} -- 줄리안 어산지\footnote{Julian Assange, \textit{A Call to Cryptographic Arms} \cite{call-to-cryptographic-arms}}
+\end{flushright}\end{samepage}\end{quotation}
 
+\begin{comment}
 Nobody yet knows for sure if the universe's smile is genuine or not. It
 is possible that our assumption of mathematical asymmetries is wrong and
 we find that P actually equals NP \cite{wiki:pnp}, or we find surprisingly quick
@@ -157,30 +274,47 @@ solutions to specific problems \cite{wiki:discrete-log} which we currently assum
 If that should be the case, cryptography as we know it will cease to
 exist, and the implications would most likely change the world beyond
 recognition.
+\end{comment}
+우주의 미소가 진짜인지 아닌지 아무도 모른다. 
+수학적 비대칭성에 대한 우리의 가정이 잘못되어 P가 실제로 NP\cite{wiki:pnp}라는 것을 발견하거나, 이산 로그의 문제\cite{wiki:discrete-log}에 대한 해결책을 찾을 수도 있다. 
+만약 그런 일이 발생한다면 우리는 더 이상 암호학은 사용할 수 없게 될 것이고, 
+이는 우리가 상상할 수 없을 정도로 세상을 변화시킬 것이다.
 
 \begin{quotation}\begin{samepage}
-\enquote{Vires in Numeris} = \enquote{Strength in Numbers}\footnote{\textit{Vires in Numeris} was first proposed as a Bitcoin motto by the bitcointalk user \textit{epii}~\cite{epii}}
+\enquote{Vires in Numeris} = \enquote{Strength in Numbers}\footnote{\textit{Vires in Numeris} 는 bitcointalk 사용자인 \textit{epii}~\cite{epii}에 의해 
+	비트코인 모토로 처음 제안되었다.}
 \end{samepage}\end{quotation}
 
+\begin{comment}
 \textit{Vires in numeris} is not only a catchy motto used by bitcoiners. The
 realization that there is an unfathomable strength to be found in
 numbers is a profound one. Understanding this, and the inversion of
 existing power balances which it enables changed my view of the world
 and the future which lies ahead of us.
+\end{comment}
+숫자의 힘(Vires in numeris)은 비트코이너 만을 위한 모토가 아니다.
+숫자에 강력한 힘이 있다는 깨닫는 것은 심오한 일이다.
+숫자의 힘을 이해하고 이 힘이 물리적 힘을 넘어설 수 있다는 사실은 
+우리의 세계와 우리 앞에 있는 미래에 대한 나의 시각을 바꾸어 놓았다.
 
-One direct result of this is the fact that you don't have to ask anyone
-for permission to participate in Bitcoin. There is no page to sign up,
-no company in charge, no government agency to send application forms to.
-Simply generate a large number and you are pretty much good to go. The
-central authority of account creation is mathematics. And God only knows
-who is in charge of that.
+\begin{comment}
+	One direct result of this is the fact that you don't have to ask anyone for permission to participate in Bitcoin. 
+	There is no page to sign up, no company in charge, no government agency to send application forms to.
+	Simply generate a large number and you are pretty much good to go. 
+	The central authority of account creation is mathematics. And God only knows who is in charge of that.
+\end{comment}
+이 숫자의 힘은 비트코인의 참여에 그 누구의 허가를 받을 필요가 없다는 것을 가능하게 한다.
+가입할 필요도 없고, 담당 회사도 없고, 신청서를 보낼 정부 기관도 없다.
+단순하게 큰 숫자를 하나 생성하면 이 숫자는 아무도 사용하지 않는다.
+비트코인 계정의 관리자는 수학이다. 그 책임자가 누구인지는 신만이 알고있다.
 
 \begin{figure}
   \includegraphics{assets/images/elliptic-curve-examples.png}
-  \caption{Elliptic curve examples. Graphic cc-by-sa Emmanuel Boutet.}
+  \caption{타원곡선의 예시 (출처: Emmanuel Boutet)}
   \label{fig:elliptic-curve-examples}
 \end{figure}
 
+\begin{comment}
 Bitcoin is built upon our best understanding of reality. While there are
 still many open problems in physics, computer science, and mathematics,
 we are pretty sure about some things. That there is an asymmetry between
@@ -189,13 +323,27 @@ one such thing. That computation needs energy is another one. In other
 words: finding a needle in a haystack is harder than checking if the
 pointy thing in your hand is indeed a needle or not. And finding the
 needle takes work.
+\end{comment}
+비트코인은 현실을 매우 잘 반영한다.
+물리학, 컴퓨터 과학, 수학에는 아직 미해결 문제가 많지만, 몇 가지는 확신할 수 있다.
+어떤 문제의 해결책을 찾는 것과 이 해결책을 검증하는 것에 대한 비대칭성은 우리가 확신할 수 있는 것에 속한다.
+계산에는 에너지가 필요하다는 것도 확신할 수 있다. 
+다시 말해, 건초 더미에서 바늘을 찾는 것은 내가 찾은 뾰족한 것이 실제 바늘인지 확인하는 것보다 더 어렵다. 
+그리고 바늘을 찾는 것은 큰 노력이 필요하다.
 
+\begin{comment}
 The vastness of Bitcoin's address space is truly mind-boggling. The
 number of private keys even more so. It is fascinating how much of our
 modern world boils down to the improbability of finding a needle in an
 unfathomably large haystack. I am now more aware of this fact than ever.
+\end{comment}
+비트코인 주소의 방대함은 매우 놀랍다. 개인 키의 수는 우리가 생각하는 것보다 훨씬 더 많다.
+현대 기술이 측량할 수 없을 정도로 큰 건초더미에서 바늘을 찾을 수 없다는 점은 매우 매력적인 사실이다.
+나는 이제 이 사실을 명확하게 인지하고 있다.
 
-\paragraph{Bitcoin taught me that there is strength in numbers.}
+%\paragraph{Bitcoin taught me that there is strength in numbers.}
+\paragraph{비트코인은 나에게 숫자에 엄청난 힘이 있다는 사실을 가르쳐주었다.}
+
 
 % ---
 %

@@ -1,10 +1,16 @@
-\chapter{Reflections on \enquote{Don't Trust, Verify}}
+\chapter{ \enquote{신뢰하지 말고 검증하라}의 고찰}
 \label{les:16}
 
+\begin{comment}
 \begin{chapquote}{Lewis Carroll, \textit{Alice in Wonderland}}
 \enquote{Now for the evidence,} said the King, \enquote{and then the sentence.}
 \end{chapquote}
+\end{comment}
+\begin{chapquote}{루이스 캐롤, \textit{이상한 나라의 앨리스}}
+	\enquote{이제 증거가 있으니,} 왕은 말했다, \enquote{선고를 내리겠다.}
+\end{chapquote}
 
+\begin{comment}
 Bitcoin aims to replace, or at least provide an alternative to,
 conventional currency. Conventional currency is bound to a centralized
 authority, no matter if we are talking about legal tender like the US
@@ -12,14 +18,29 @@ dollar or modern monopoly money like Fortnite's V-Bucks. In both
 examples, you are bound to trust the central authority to issue, manage
 and circulate your money. Bitcoin unties this bound, and the main issue
 Bitcoin solves is the issue of \textit{trust}.
+\end{comment}
+비트코인은 기존 통화를 대체하거나 대안을 제공하는 것을 목표로 한다.
+미국의 달러나 포트나이트의 V-Bucks와 같은 기존의 현대 독점 화폐는 
+중앙 집중형 권한에 의해 묶여있다.
+두 화폐 모두 당신은 발행, 관리, 유통하는 중앙 기관들을 신뢰해야 한다.
+비트코인은 이러한 한계를 극복하였다.
+그리고 비트코인은 화폐에 있어서 가장 중요한 문제인 신뢰의 문제를 해결하였다.
+
+
+%\begin{quotation}\begin{samepage}
+%\enquote{The root problem with conventional currency is all the trust that's
+%required to make it work. [...] What is needed is an electronic
+%payment system based on cryptographic proof instead of trust}
+%\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, official Bitcoin announcement~\cite{bitcoin-announcement} and whitepaper~\cite{whitepaper}}
+%\end{flushright}\end{samepage}\end{quotation}
 
 \begin{quotation}\begin{samepage}
-\enquote{The root problem with conventional currency is all the trust that's
-required to make it work. [...] What is needed is an electronic
-payment system based on cryptographic proof instead of trust}
-\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, official Bitcoin announcement~\cite{bitcoin-announcement} and whitepaper~\cite{whitepaper}}
+		\enquote{기존 화폐의 문제는 화폐가 동작하는 데 필요한 모든 종류의 신뢰이다. [...] 
+		암호학 기반의 전자 결제 시스템에서 필요한 것은 신뢰가 아닌 증명이다.}
+		\begin{flushright} -- 사토시 나카모토\footnote{Satoshi Nakamoto, official Bitcoin announcement~\cite{bitcoin-announcement} and whitepaper~\cite{whitepaper}}
 \end{flushright}\end{samepage}\end{quotation}
 
+\begin{comment}
 Bitcoin solves the problem of trust by being completely decentralized,
 with no central server or trusted parties. Not even trusted \textit{third}
 parties, but trusted parties, period. When there is no central
@@ -30,23 +51,42 @@ nodes, hardware wallets, and yes, the blockchain. The only thing you
 have to \enquote{trust} is that our understanding of mathematics and physics
 isn't totally off and that the majority of miners act honestly (which
 they are incentivized to do).
+\end{comment}
+비트코인은 중앙 서버나 신뢰 당사자들 없이 완전히 탈중앙화되어 신뢰 문제를 해결한다.
+제삼자는 물론 신뢰 당사자도 필요 없다. 이상이다.
+중앙 권한이 없다면, 믿어야 할 사람도 없다.
+완전한 탈중앙화는 혁신이다. 
+그것이 비트코인 유연성의 핵심이며, 비트코인이 여전히 살아 숨 쉬는 이유이다.
+이러한 탈중앙화 덕분에 우리는 채굴이 가능하고, 노드, 하드웨어 지갑, 블록체인을 직접 가질 수 있다. 
+우리가 \enquote{신뢰}해야 할 것은 수학, 물리학의 법칙과 
+다수 채굴자가 인센티브를 얻기 위해 정직하게 행동한다는 것이다.
 
+\begin{comment}
 While the regular world operates under the assumption of \textit{\enquote{trust,
 but verify,}} Bitcoin operates under the assumption of \textit{\enquote{don't
 trust, verify.}} Satoshi made the importance of removing trust very clear in
 both the introduction as well as the conclusion of the Bitcoin whitepaper.
+\end{comment}
+보통의 세상에서는 \enquote{신뢰하되 검증하라. (trust, but verify)}를 가정하지만,
+비트코인은 \enquote{신뢰하지 말고 검증하라. (don't trust, verify)}를 가정한다.
+사토시는 비트코인 백서의 서론과 결론 모두에서 신뢰 제거의 중요성을 분명하게 밝히고 있다.
 
 \begin{quotation}\begin{samepage}
-\enquote{Conclusion: We have proposed a system for electronic transactions
-without relying on trust.}
-\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, the Bitcoin whitepaper~\cite{whitepaper}}
+\enquote{결론: 신뢰에 의존하지 않고 전자 거래를 할 수 있는 시스템을 제안한다.}
+\begin{flushright} -- 사토시 나카모토\footnote{Satoshi Nakamoto, the Bitcoin whitepaper~\cite{whitepaper}}
 \end{flushright}\end{samepage}\end{quotation}
 
+\begin{comment}
 Note that \textit{without relying on trust} is used in a very specific context
 here. We are talking about trusted third parties, i.e. other entities
 which you trust to produce, hold, and process your money. It is assumed,
 for example, that you can trust your computer.
+\end{comment}
+신뢰에 의존하지 않는 점은 특정한 맥락에서 사용되기 때문에 유의해야 한다.
+우리는 신뢰할 수 있는 제삼자, 즉 돈을 발행, 보유, 처리를 위한 주체에 관해 이야기하고 있다.
+예를 들어 당신의 컴퓨터를 신뢰할 수 있다고 가정해 보자.
 
+\begin{comment}
 As Ken Thompson showed in his Turing Award lecture, trust is an
 extremely tricky thing in the computational world. When running a
 program, you have to trust all kinds of software (and hardware) which,
@@ -54,13 +94,20 @@ in theory, could alter the program you are trying to run in a malicious
 way. As Thompson summarized in his \textit{Reflections on Trusting Trust}:
 \enquote{The moral is obvious. You can't trust code that you did not totally
 create yourself.}~\cite{trusting-trust}
+\end{comment}
+켄 톰슨(Ken Thompson)이 튜링 어워드(Turing Award) 강의에서 보여주었듯이 컴퓨터 세계에서 신뢰는 매우 까다로운 문제이다.
+프로그램을 실행할 때는 악의적인 방식으로 변경된 모든 종류의 소프트웨어와 하드웨어를 신뢰해야 한다.
+신뢰하는 신뢰의 고찰(Reflections on Trusting Trust)에서 톰슨은
+\enquote{도덕은 명확하다. 스스로 직접 작성한 코드가 아니면 신뢰하기 어렵다.}\cite{trusting-trust}
+라고 말하고 있다.
 
 \begin{figure}
   \includegraphics{assets/images/ken-thompson-hack.png}
-  \caption{Excerpts from Ken Thompson's paper `Reflections on Trusting Trust'}
+  \caption{켄 톰슨의 논문 `신뢰하는 신뢰의 고찰'의 발췌}
   \label{fig:ken-thompson-hack}
 \end{figure}
 
+\begin{comment}
 Thompson demonstrated that even if you have access to the source code,
 your compiler --- or any other program-handling program or
 hardware --- could be compromised and detecting this backdoor would be
@@ -68,13 +115,18 @@ very difficult. Thus, in practice, a truly \textit{trustless} system does not
 exist. You would have to create all your software \textit{and} all your
 hardware (assemblers, compilers, linkers, etc.) from scratch, without
 the aid of any external software or software-aided machinery.
+\end{comment}
+톰슨은 코드에 대한 접근 권한이 있더라도 컴파일러(또는 기타 처리 프로그램, 하드웨어)
+가 손상될 수 있으며 이 백도어를 감지하기가 매우 어렵다고 말한다. 
+따라서 신뢰가 필요 없는 시스템은 존재하지 않는다.
+당신은 외부 소프트웨어나 지원 도구 없이 모든 소프트웨어와 하드웨어(어셈블러, 컴파일러, 링커 등)를 만들어야 한다.
 
 \begin{quotation}\begin{samepage}
-\enquote{If you wish to make an apple pie from scratch, you must first invent
-the universe.}
-\begin{flushright} -- Carl Sagan\footnote{Carl Sagan, \textit{Cosmos} \cite{cosmos}}
+\enquote{온전히 나의 힘으로 사과파이를 만들고 싶다면 먼저 우주를 발명해야 한다.}
+\begin{flushright} -- 칼 세이건\footnote{Carl Sagan, \textit{Cosmos} \cite{cosmos}}
 \end{flushright}\end{samepage}\end{quotation}
 
+\begin{comment}
 The Ken Thompson Hack is a particularly ingenious and hard-to-detect backdoor,
 so let's take a quick look at a hard-to-detect backdoor which works without
 modifying any software. Researchers found a way to compromise security-critical
@@ -84,13 +136,20 @@ of the stuff that computer chips are made of they were able to compromise a
 cryptographically secure random number generator. Since this change can't be
 seen, the backdoor can't be detected by optical inspection, which is one of the
 most important tamper-detection mechanism for chips like these.
+\end{comment}
+켄 톰슨은 소프트웨어를 수정하지 않고 백도어에서 은밀하게 동작하는 해킹이 가능하다고 말한다.
+실리콘 불순물의 극성을 변경하여 보안에 중요한 하드웨어를 위조하는 방식이다\cite{becker2013stealthy}.
+컴퓨터 반도체를 구성하는 물질의 물리적 속성을 변경하는 것만으로도 암호학적으로 안전한 난수 생성기를 손상시킬 수 있었다.
+이 백도어 공격은 눈으로 볼 수 없기 때문에 가장 강력한 해킹 방지 메커니즘 중의 하나인 광학 검사로도 감지할 수 없다.
 
 \begin{figure}
   \includegraphics{assets/images/stealthy-hardware-trojan.png}
-  \caption{Stealthy Dopant-Level Hardware Trojans by Becker, Regazzoni, Paar, Burleson}
+  %\caption{Stealthy Dopant-Level Hardware Trojans by Becker, Regazzoni, Paar, Burleson}
+  \caption{은밀한 도판트 레벨의 하드웨어 트로이 목마 바이러스}
   \label{fig:stealthy-hardware-trojan}
 \end{figure}
 
+\begin{comment}
 Sounds scary? Well, even if you would be able to build everything from
 scratch, you would still have to trust the underlying mathematics. You
 would have to trust that \textit{secp256k1} is an elliptic curve without
@@ -99,20 +158,37 @@ foundations of cryptographic functions and arguably this has already
 happened at least once.~\cite{wiki:Dual_EC_DRBG} There are good reasons to be paranoid, and the
 fact that everything from your hardware, to your software, to the
 elliptic curves used can have backdoors~\cite{wiki:backdoors} are some of them.
+\end{comment}
+무섭게 들리는가? 처음부터 모든 것을 구축하더라도 기본 수학은 여전히 신뢰해야 한다.
+secp256k1은 백도어가 없는 타원 곡선임을 믿어야 한다.
+그렇다. 수학적 기반에 악의적인 백도어를 심어 암호학 함수를 공격하는 것이 가능하다. 
+이러한 공격은 적어도 한 번 이상 발생했을 것이다\cite{wiki:Dual_EC_DRBG}.
+하드웨어에서 소프트웨어, 타원곡선에 이르기까지의 모든 것이 백도어\cite{wiki:backdoors}를 가질 수 있다는 사실은
+편집증을 유발한다.
+
 
 \begin{quotation}\begin{samepage}
-\enquote{Don't trust. Verify.}
-\begin{flushright} -- Bitcoiners everywhere
+\enquote{신뢰하지 말고 검증하라(Don’t trust. Verify).}
+\begin{flushright} -- 모든 비트코이너들
 \end{flushright}\end{samepage}\end{quotation}
 
-The above examples should illustrate that \textit{trustless} computing is
+\begin{comment}
+The above examp과과es should illustrate that \textit{trustless} computing is
 utopic. Bitcoin is probably the one system which comes closest to this
 utopia, but still, it is \textit{trust-minimized} --- aiming to remove trust
 wherever possible. Arguably, the chain-of-trust is neverending, since
 you will also have to trust that computation requires energy, that P
 does not equal NP, and that you are actually in base reality and not
 imprisoned in a simulation by malicious actors.
+\end{comment}
+위의 예시는 신뢰가 필요 없는 컴퓨터가 유토피아라는 것을 나타낸다.
+비트코인은 아마도 이 유토피아에 가장 가까운 시스템일 것이다.
+아직 완벽하다고 말할 수 없으나 적어도 비트코인은 신뢰를 최소화하거나 제거하는 것을 목표로 하고 있다.
+분명한 것은 신뢰의 사슬은 끝이 없다는 점이다.
+계산에는 에너지가 필요하다는 것과 P가 NP와 같지 않으며, 
+악의적인 참여자에게 휘둘리지 않고 있다는 것, 이 모든 것을 믿어야 하기 때문이다.
 
+\begin{comment}
 Developers are working on tools and procedures to minimize any remaining trust
 even further. For example, Bitcoin developers created
 Gitian\footnote{\url{https://gitian.org/}}, which is a software distribution
@@ -121,7 +197,14 @@ are able to reproduce identical binaries, the chance of malicious tampering is
 reduced. Fancy backdoors aren't the only attack vector. Simple blackmail or
 extortion are real threats as well. As in the main protocol, decentralization is
 used to minimize trust.
+\end{comment}
+개발자들은 여전히 남아있는 신뢰를 최소화하기 위한 도구 및 절차를 위한 작업을 하고 있다.
+그 예로 비트코인 개발자들은 결정론적 빌드를 만드는 소프트웨어 배포 기법인 Gitian\footnote{\url{https://gitian.org/}}을 개발하였다.
+이 기법의 핵심 아이디어는 여러 개발자가 동일한 바이너리를 재현할 수 있으면 악의적 변조의 가능성이 줄어든다는 것이다.
+백도어만이 공격 방법은 아니다. 단순한 협박이나 갈취도 공격이 될 수 있다.
+메인 프로토콜처럼 이 프로젝트에서도 탈중앙화를 통해 신뢰를 최소화한다.
 
+\begin{comment}
 Various efforts are being made to improve upon the chicken-and-egg problem of
 bootstrapping which Ken Thompson's hack so brilliantly pointed
 out~\cite{web:bootstrapping}. One such effort is
@@ -131,13 +214,20 @@ reproducible builds by design. The result is that you don't have to trust any
 software-providing servers anymore since you can verify that the served binary
 was not tampered with by rebuilding it from scratch. Recently, a
 pull-request was merged to integrate Guix into the Bitcoin build process.\footnote{See PR 15277 of \texttt{bitcoin-core}: \\ \url{https://github.com/bitcoin/bitcoin/pull/15277}}
+\end{comment}
+켄 톰슨의 해킹이 지적한 닭이 먼저냐 달걀이 먼저냐에 대한 부트스트래핑 문제를 개선하는 노력도 이루어지고 있다\cite{web:bootstrapping}.
+그 노력 중 하나로 기능적으로 선언된 패키지를 관리하여 설계에 따라 비트 단위로 재현이 가능한 빌드를 제공하는 Guix(geeks로 발음)\footnote{\url{https://guix.gnu.org}}이 그것이다.
+바이너리가 처음부터 다시 빌드하여 변조되지 않았음을 확인할 수 있어서 더 이상 소프트웨어에서 제공하는 서버를 신뢰할 필요가 없다.
+최근에 Guix는 비트코인 빌드 프로세스에 통합되기 위해 머지되었다\footnote{PR 15277 of \texttt{bitcoin-core}: \\ \url{https://github.com/bitcoin/bitcoin/pull/15277}}.
 
 \begin{figure}
   \includegraphics{assets/images/guix-bootstrap-dependencies.png}
-  \caption{Which came first, the chicken or the egg?}
+  %\caption{Which came first, the chicken or the egg?}
+  \caption{닭이 먼저냐? 달걀이 먼저냐?}
   \label{fig:guix-bootstrap-dependencies}
 \end{figure}
 
+\begin{comment}
 Luckily, Bitcoin doesn't rely on a single algorithm or piece of
 hardware. One effect of Bitcoin's radical decentralization is a
 distributed security model. Although the backdoors described above are
@@ -145,21 +235,39 @@ not to be taken lightly, it is unlikely that every software wallet,
 every hardware wallet, every cryptographic library, every node
 implementation, and every compiler of every language is compromised.
 Possible, but highly unlikely.
+\end{comment}
+다행히도 비트코인은 하나의 알고리즘과 하드웨어에 의존하지 않는다.
+비트코인의 급진적인 탈중앙화 효과 중 하나는 분산 보안 모델이다. 
+백도어를 무시할 수는 없지만 모든 비트코인 소프트웨어 지갑, 하드웨어 지갑, 
+암호화 라이브러리, 노드의 구현과 컴파일러가 손상될 가능성은 없다.
+가능하지만, 가능성이 거의 없다.
 
+\begin{comment}
 Note that you can generate a private key without relying on any computational
 hardware or software. You can flip a coin~\cite{antonopoulos2014mastering} a
 couple of times, although depending on your coin and tossing style this source
 of randomness might not be sufficiently random. There is a reason why storage
 protocols like Glacier\footnote{\url{https://glacierprotocol.org/}} advise to
 use casino-grade dice as one of two sources of entropy.
+\end{comment}
+특정 컴퓨터 하드웨어나 소프트웨어에 의존하지 않고도 개인키를 생성할 수 있다.
+동전을 몇 번 던져서 개인키를 생성할 수 있지만\cite{antonopoulos2014mastering},
+동전을 던지는 스타일에 따라 무작위성이 충분하지 않을 수 있다.
+글래시어(Glacier)\footnote{\url{https://glacierprotocol.org/}}와 같은 스토리지 프로토콜에서는 
+개인키 생성 시 카지노 수준의 주사위를 사용하도록 조언한다.
 
+\begin{comment}
 Bitcoin forced me to reflect on what trusting nobody actually entails.
 It raised my awareness of the bootstrapping problem, and the implicit
 chain-of-trust in developing and running software. It also raised my
 awareness of the many ways in which software and hardware can be
-compromised.
+compromised고고
+\end{comment}
+비트코인은 아무도 믿지 않는 것이 가능하다는 것을 보여주었다.
+비트코인은 부트스트래핑 문제와 소프트웨어 개발 및 실행에 있어 암묵적인 신뢰에 대한 인식을 높였다.
+그리고 소프트웨어나 하드웨어가 손상될 수 있는 여러 가지 방법에 대한 인식을 높였다.
 
-\paragraph{Bitcoin taught me not to trust, but to verify.}
+\paragraph{비트코인은 나에게 신뢰하지 말고 검증하라고 가르쳤다.}
 
 % ---
 %

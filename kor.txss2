@@ -1,0 +1,254 @@
+{
+    "InternalPDFViewer": {
+        "Embedded": true,
+        "File": "main.pdf"
+    },
+    "Session": {
+        "Bookmarks": [
+            {
+                "bookmarkNumber": 1,
+                "fileName": "lessons/ch3-20-cypherpunks-write-code.tex",
+                "lineNumber": 65,
+                "text": "ch3-20-cypherpunks-write-code.tex\n사이퍼펑크는 코드를 작성한다.}"
+            }
+        ],
+        "CurrentFile": "frontmatter/about.tex",
+        "FileVersion": 1,
+        "Files": [
+            {
+                "Col": 14,
+                "EditorGroup": 0,
+                "FileName": "main.tex",
+                "FirstLine": 246,
+                "FoldedLines": "",
+                "Line": 282
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch1-04-the-problem-of-identity.tex",
+                "FirstLine": 47,
+                "FoldedLines": "",
+                "Line": 72
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "main.bib",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 50,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch1-03-replication-and-locality.tex",
+                "FirstLine": 30,
+                "FoldedLines": "",
+                "Line": 46
+            },
+            {
+                "Col": 52,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch2-12-the-history-and-downfall-of-money.tex",
+                "FirstLine": 321,
+                "FoldedLines": "",
+                "Line": 263
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch2-13-fractional-reserve-insanity.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 29,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch2-14-sound-money.tex",
+                "FirstLine": 278,
+                "FoldedLines": "",
+                "Line": 315
+            },
+            {
+                "Col": 23,
+                "EditorGroup": 0,
+                "FileName": "chapters/ch3-00-technology.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 67
+            },
+            {
+                "Col": 18,
+                "EditorGroup": 0,
+                "FileName": "chapters/ch4-00-conclusion.tex",
+                "FirstLine": 91,
+                "FoldedLines": "",
+                "Line": 127
+            },
+            {
+                "Col": 31,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch3-19-privacy-is-not-dead.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 26
+            },
+            {
+                "Col": 41,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch3-16-reflections-on-dont-trust-verify.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 23
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch1-07-the-limits-of-knowledge.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 9,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch1-05-an-immaculate-conception.tex",
+                "FirstLine": 37,
+                "FoldedLines": "",
+                "Line": 63
+            },
+            {
+                "Col": 22,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch3-15-strength-in-numbers.tex",
+                "FirstLine": 246,
+                "FoldedLines": "",
+                "Line": 227
+            },
+            {
+                "Col": 9,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch3-17-telling-time-takes-work.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 70,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch3-18-move-slowly-and-dont-break-things.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 13
+            },
+            {
+                "Col": 7,
+                "EditorGroup": 0,
+                "FileName": "chapters/ch2-00-economics.tex",
+                "FirstLine": 44,
+                "FoldedLines": "",
+                "Line": 74
+            },
+            {
+                "Col": 68,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch2-08-financial-ignorance.tex",
+                "FirstLine": 61,
+                "FoldedLines": "",
+                "Line": 89
+            },
+            {
+                "Col": 1,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch3-20-cypherpunks-write-code.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 5
+            },
+            {
+                "Col": 51,
+                "EditorGroup": 0,
+                "FileName": "lessons/ch3-21-metaphors-for-bitcoins-future.tex",
+                "FirstLine": 126,
+                "FoldedLines": "",
+                "Line": 189
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "frontmatter/ch0-00-preface.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 52,
+                "EditorGroup": 0,
+                "FileName": "quote.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 7
+            },
+            {
+                "Col": 35,
+                "EditorGroup": 0,
+                "FileName": "chapters/ch0-02-introduction.tex",
+                "FirstLine": 63,
+                "FoldedLines": "",
+                "Line": 91
+            },
+            {
+                "Col": 83,
+                "EditorGroup": 0,
+                "FileName": "backmatter/acknowledgments.tex",
+                "FirstLine": 7,
+                "FoldedLines": "",
+                "Line": 40
+            },
+            {
+                "Col": 57,
+                "EditorGroup": 0,
+                "FileName": "backmatter/bibliography.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 19
+            },
+            {
+                "Col": 33,
+                "EditorGroup": 0,
+                "FileName": "frontmatter/dedication.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 10
+            },
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "frontmatter/foreword.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 0
+            },
+            {
+                "Col": 15,
+                "EditorGroup": 0,
+                "FileName": "frontmatter/toc-quote.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 12
+            },
+            {
+                "Col": 42,
+                "EditorGroup": 0,
+                "FileName": "frontmatter/about.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 20
+            }
+        ],
+        "MasterFile": "",
+        "VerticalSplit": false
+    }
+}
